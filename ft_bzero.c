@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 12:59:18 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/18 16:48:55 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/09/18 15:26:27 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/09/18 16:48:05 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int value, size_t num)
+void ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < num)
-	{
-		((unsigned char *)ptr)[i] = (unsigned char)value;
-		i++;
-	}
-	return (ptr);
+	ft_memset(s, 0, n);
 }
-/*
-#include <stdio.h>
 
 int	main(void)
 {
@@ -33,8 +23,7 @@ int	main(void)
 
 	char str[] = "Hola Sara";
 	n = 1;
-	ft_memset(str, n, 4);
+	ft_bzero(str, 4);
 	printf("%s\n", str);
 	return (0);
 }
-*/
