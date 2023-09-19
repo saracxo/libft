@@ -6,11 +6,11 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:50:07 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/14 11:28:33 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/09/19 15:47:50 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int i)
+int	ft_isprint(int i)
 {
 	if (i >= 32 && i <= 126)
         return (1);

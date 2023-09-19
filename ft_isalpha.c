@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 12:17:57 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/18 11:21:23 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/09/19 15:41:40 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@ int	ft_isalpha(int i)
 {
 	return (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z');
 }
-
+/*
 int main(void)
 {
     printf("%d", ft_isalpha('5'));
     return (0);
 }
+*/
 

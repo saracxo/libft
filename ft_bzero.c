@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:26:27 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/18 16:48:05 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/09/19 15:48:26 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-
+/*
 int	main(void)
 {
 	size_t	n;
@@ -27,3 +27,4 @@ int	main(void)
 	printf("%s\n", str);
 	return (0);
 }
+*/
