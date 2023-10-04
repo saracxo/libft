@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 11:34:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/27 12:02:23 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:27:41 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,4 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 int ft_tolower(int i);
 int ft_toupper(int i);
+char *ft_strrchr(const char *s, int c);

@@ -1,35 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 11:07:20 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/03 16:47:00 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/09/28 16:25:28 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/09/28 16:41:47 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char *ft_strrchr(const char *s, int c)
+int strncmp(const char *str1, const char *str2, size_t n)
 {
-    int i;
-
-    i = 0;
-    while (s[i])
-        i++;
-    while (i >= 0)
-    {
-        if (s[i] == (char)c)
-            return ((char *)s + i);
-        i--;
-    }
-    return (NULL);
-}
-
-int main(void)
-{
-    printf("%s \n", ft_strrchr("holi caracoli", 'r'));
-    return 0;
+    
 }
