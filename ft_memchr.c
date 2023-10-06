@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:55:27 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/04 11:18:51 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/04 17:35:03 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 
 void *ft_memchr(const void *s, int c, size_t n)
 {
-    size_t	i;
+    size_t	i; 
 
-	i = 0;
-	while (i < n)
-	{
-		if (*((unsigned char*)(s + i)) == (unsigned char)c)
-			return ((void *)(s + i));
-		i++;
-	}
-	return (NULL);
+    i = 0; 
+    while (i < n) // Mientras no hayamos recorrido toda la región de memoria (n bytes).
+    {
+        // Comprobamos si el byte en la posición actual es igual al byte que buscamos (c).
+        if (*((unsigned char*)(s + i)) == (unsigned char)c)
+            return ((void *)(s + i)); // Si encontramos el byte, devolvemos un puntero a esa posición.
+        i++; // Avanzamos al siguiente byte en la región de memoria.
+    }
+    return (NULL); // Si no encontramos el byte después de recorrer toda la región, devolvemos NULL.
 }
+
+
+
