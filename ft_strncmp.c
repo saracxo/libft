@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 16:25:28 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/06 16:23:00 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/07 12:44:55 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,28 @@
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	size_t	i;
-
 	i = 0;
-	while (i < n)
+    
+    if(!str1 || !str2)
+        return(0);
+    
+	while (i <= n)
 	{
-		if (*str1 - *str2 != 0)
-			return ((unsigned char) *str1 - (unsigned char) *str2); // uns char es para convertir los valores en positivo siempre. La resta es la diferencia en valores ASCII. 
-		str1++;
-		str2++;
-		i++;
+		if (str1[i] == str2[i]);
+            i++;
+        if else
+            return(str1[i] - str2[i]);       
 	}
 	return (0);
 }
 
 #include <stdio.h>
-int main(void)
+int main()
 {
-	char str1[] = "uno";
-	char str2[] = "dos";
+	char s1[] = "culo g";
+	char s2[] = "culo c";
+	int result = ft_strncmp(s1, s2, 6);
 
-	printf();
+	printf("s1: %s, s2: %s, diferencia: %d\n", s1, s2, result);
 	return (0);
 }
