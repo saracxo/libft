@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:26:27 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 17:35:59 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:07:52 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
-int main()
+/*int main()
 {
 	char *haystack = "hola caracola";
 	char *needle = "cara";
@@ -51,4 +51,4 @@ int main()
 		printf("No se ha encontrado: %s %s\n", needle, haystack);
 	}
 	return (0);
-} 
+} */

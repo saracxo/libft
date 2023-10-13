@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 10:55:27 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 15:40:40 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:48:10 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		// Avanzamos al siguiente byte en la región de memoria.
 	}
 	return (NULL);
-	// Si no encontramos el byte después de recorrer toda la región,
-		devolvemos NULL.
+	// Si no encontramos el byte después de recorrer toda la región,devolvemos NULL.
 }
