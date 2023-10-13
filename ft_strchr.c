@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:02:19 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/28 12:49:03 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:36:36 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@ char	*ft_strchr(const char *str, int character)
 	while (*str)
 	{
 		if (*str == character)
-			return ((char*)str);
+			return ((char *)str);
 		++str;
 	}
 	return (NULL);
 }
-
-int main(void)
+/*
+int	main(void)
 {
-    printf("%s\n", ft_strchr("cacaguate",'u'));
-    return(0);
+	printf("%s\n", ft_strchr("cacaguate", 'u'));
+	return (0);
 }
+*/

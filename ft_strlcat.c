@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:10:51 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/27 17:38:45 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/11 15:36:51 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,17 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		dest[i] = '\0';
 	return (length + ft_strlen(src));
 }
-
-int main(void)
+/*
+int	main(void)
 {
-    char dest[10] = "Hola,";
-    const char src[] = "poota";
-    size_t size = 20;
+	char dest[10] = "Hola,";
+	const char src[] = "poota";
+	size_t size = 20;
 
-    size_t result = ft_strlcat(dest, src, size);
+	size_t result = ft_strlcat(dest, src, size);
 
-    printf("%s\n", dest);
+	printf("%s\n", dest);
 
-    return 0;
+	return (0);
 }
+*/
