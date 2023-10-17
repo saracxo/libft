@@ -3,24 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:46:58 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 12:09:36 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 16:47:57 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t i;
-    size_t j;
-    
-    i = 0;
-    while (i < len && )
-    {
-        /* code */
-    }
-    
+	int	i;
+	char	*mem;
+
+	if (!s)
+		return (NULL);
+	mem = ft_calloc(len + 1, sizeof(char));
+	if (!mem)
+		return (NULL);
+	i = 0;
+	--start;
+	while (s[i] && i < (int)len)
+	{
+		mem[i] = s[start + i];
+		i++;
+	}
+	return (mem);
 }
+
+/*
+int	main(void)
+{
+	char	*h;
+
+	h = "Hola";
+	printf("%s\n", ft_substr(h, 2, 1));
+}
+*/

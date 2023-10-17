@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 14:55:16 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 11:25:57 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 14:54:19 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (i);
 }
+
 /*
 #include <stdio.h>
 

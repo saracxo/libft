@@ -1,20 +1,18 @@
-cd
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 15:19:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/09/19 15:45:53 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 16:34:19 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-	int
-	ft_isdigit(int i)
+int	ft_isdigit(int i)
 {
 	if (i >= '0' && i <= '9')
 		return (1);

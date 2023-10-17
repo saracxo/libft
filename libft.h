@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 11:34:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 13:02:34 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/16 18:14:48 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 
 void    ft_bzero(void *s, size_t n);
 int     ft_isalnum(int i);
@@ -38,3 +39,4 @@ int	    ft_atoi(const char *str);
 void	*ft_memchr(const void *s, int c, size_t n);
 int	    ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char    *ft_strjoin(char const *s1, char const *s2);

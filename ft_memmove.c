@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:43:07 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 15:40:57 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/13 16:34:57 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		d = dest + (n - 1); // Apuntamos al último byte de 'dest'.
 		s = src + (n - 1);  // Apuntamos al último byte de 'src'.
-		while (n--)         // Copiamos 'n' bytes de 'src' a 'dest',
-			de derecha a izquierda para evitar superposición.*d-- = *s--;
+		while (n--);    // Copiamos 'n' bytes de 'src' a 'dest',de derecha a izquierda para evitar superposición.*d-- = *s--;
 	}
 	return (dest); // Devolvemos 'dest' después de realizar la copia.
 }

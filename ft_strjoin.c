@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 15:52:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 14:58:30 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/10/16 14:01:55 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/10/16 17:17:32 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int i)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	return ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || (i >= '0'
-			&& i <= '9'));
-}
+	int		i;
+	int		j;
+	char	*mem;
 
-/*
-int	main(void)
-{
-	printf("%d", ft_isalnum('-'));
-	return(0);
+	if (!s1 || !s2)
+		return (0);
+	mem = ft_calloc((ft_strlen(s1) + ft_strlen(s2) + 1), sizeof(char));
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		mem[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2[j] != '\0')
+	{
+		mem[i + j] = s2[j];
+		j++;
+	}
+	mem[i + j] = '\0';
+	return (mem);
 }
-*/
