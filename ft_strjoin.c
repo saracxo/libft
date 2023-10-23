@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:01:55 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/17 11:47:20 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/17 19:11:31 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (mem);
 }
 
-int	main()
+int	main(void)
 {
-	char	s1[] = "hola";
-	char	s2[] = "pelo";
-	char	*result;
+	char s1[] = "hola";
+	char s2[] = "pelo";
+	char    *result;
 
 	result = ft_strjoin(s1, s2);
 	printf("s1:%s\n s2:%s\n result:%s\n", s1, s2, result);
-	return(0); 		
+	return (0);
 }
