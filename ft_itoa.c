@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:50:34 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/23 13:36:05 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/10/23 18:03:31 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_itoa(int n)
 
 	num = n;
 	len = ft_intlen(num);
-	string = malloc (len + 1);
+	string = malloc(len + 1);
 	if (!string)
 		return (NULL);
 	string[len] = '\0';
@@ -54,23 +54,20 @@ char	*ft_itoa(int n)
 	return (string);
 }
 
-int main() 
+int	main(void)
 {
-    int num;
-    char *string;
-    
-    num = 0;
-    
-    string = ft_itoa(num);
+	int num;
+	char *string;
 
-    if (string != NULL) 
-    {
-        printf("Cadena: %s\n", string);
-    } 
-    else 
-    {
-        printf("Error \n");
-    }
-
-    return 0;
+	num = 0;
+	string = ft_itoa(num);
+	if (string != NULL)
+	{
+		printf("Cadena: %s\n", string);
+	}
+	else
+	{
+		printf("Error \n");
+	}
+	return (0);
 }
