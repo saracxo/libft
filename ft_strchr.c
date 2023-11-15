@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:02:19 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/19 20:15:52 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/14 11:13:06 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ char	*ft_strchr(const char *str, int character)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	printf("%s\n", ft_strchr("cacaguate", 'u'));
 	return (0);
 }
+*/

@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 11:06:38 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:13:45 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/11/01 20:38:46 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/11/14 10:48:21 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char	*mem;
-	size_t	len;
+	char	digit;
 
-	len = ft_strlen(s1);
-	mem = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!mem)
-		return (NULL);
-	ft_strlcpy(mem, s1, len + 1);
-	return (mem);
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n / 10 != 0)
+		ft_putnbr_fd(n / 10, fd);
+	digit = (n % 10) + '0';
+	write(fd, &digit, 1);
 }
-
-/*
-int	main(void)
-{
-	printf("Esta es la copia: %s\n", ft_strdup("Hola"));
-}
-*/

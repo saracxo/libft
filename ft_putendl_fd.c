@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 11:06:38 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:13:45 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/11/01 20:43:32 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/11/01 20:45:00 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*mem;
-	size_t	len;
-
-	len = ft_strlen(s1);
-	mem = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!mem)
-		return (NULL);
-	ft_strlcpy(mem, s1, len + 1);
-	return (mem);
+	if (s)
+	{
+		write (fd, &*s, ft_strlen(s));
+		write (fd, "\n", 1);
+	}
 }
 
 /*
-int	main(void)
+int main()
 {
-	printf("Esta es la copia: %s\n", ft_strdup("Hola"));
+	char *s = "hola";
+	int fd = 1;
+	ft_putendl_fd(s, fd);
+	return (0);
 }
 */

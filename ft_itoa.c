@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:50:34 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/23 18:03:31 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/14 11:11:43 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ char	*ft_itoa(int n)
 	return (string);
 }
 
+/*
 int	main(void)
 {
 	int num;
@@ -71,3 +72,4 @@ int	main(void)
 	}
 	return (0);
 }
+*/

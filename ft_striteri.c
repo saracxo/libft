@@ -1,33 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 11:06:38 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:13:45 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/10/31 20:00:32 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/11/14 11:13:56 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	char	*mem;
-	size_t	len;
+	int	i;
 
-	len = ft_strlen(s1);
-	mem = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!mem)
-		return (NULL);
-	ft_strlcpy(mem, s1, len + 1);
-	return (mem);
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
 /*
-int	main(void)
+int main()
 {
-	printf("Esta es la copia: %s\n", ft_strdup("Hola"));
+	char *s = "hola";
+	void (*f)(unsigned int, char *);
+	f = ft_putchar_fd;
+	ft_striteri(s, f);
+	return (0);
 }
 */

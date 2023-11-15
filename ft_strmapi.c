@@ -1,33 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 11:06:38 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:13:45 by sarcasti         ###   ########.fr       */
+/*   Created: 2023/10/25 16:57:29 by sarcasti          #+#    #+#             */
+/*   Updated: 2023/11/14 12:17:26 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*mem;
-	size_t	len;
+	char			*str;
+	unsigned int	i;
+	const size_t	len = ft_strlen(s);
 
-	len = ft_strlen(s1);
-	mem = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!mem)
+	if (!s)
 		return (NULL);
-	ft_strlcpy(mem, s1, len + 1);
-	return (mem);
+	str = (char *)malloc(len + 1);
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = (*f)(i, s[i]);
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
+
+char	callback(unsigned int index)
+{
+	if (index % 2 == 0)
+		return ('j');
+	else
+		return ('a');
 }
 
 /*
 int	main(void)
 {
-	printf("Esta es la copia: %s\n", ft_strdup("Hola"));
+	printf("%s\n", ft_strmapi("holadfiuahsdf", callback));
+	return (0);
 }
 */
