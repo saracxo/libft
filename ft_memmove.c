@@ -3,35 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 12:43:07 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 12:20:31 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/15 12:17:12 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	char		*d;
-	const char	*s;
+	char	*src_ptr;
+	char	*dst_ptr;
 
-	if (dest < src)
+	src_ptr = (char *)src;
+	dst_ptr = (char *)dst;
+	if (src_ptr < dst_ptr)
 	{
-		d = dest;
-		s = src;
-		while (n--)
-		}
-		else
+		while (n > 0)
 		{
-			d = dest + (n - 1);
-			s = src + (n - 1);
-			while (n--)
-				;
+			n--;
+			dst_ptr[n] = src_ptr[n];
 		}
-		return (dest);
 	}
+	else
+		ft_memcpy(dst_ptr, src_ptr, n);
+	return (dst);
+}
 /*
 #include <stdio.h>
 #include <string.h>
@@ -45,45 +44,6 @@ int	main(void)
 	ft_memmove(buffer, str, 9);
 	// Imprimimos el resultado.
 	printf("%s\n", buffer);
-	return (0);
-}
-
-
-#include "libft.h"
-
- void *ft_memmove(void *dest, const void *src, size_t n)
- {
-	char *d;
-	const char *s;
-
-	d = (char *)dest;
-	s = (const char *)src;
-	if (dest == src)
-		return(dest);
-
-	if (s < d) // Si 'src' está antes de 'dest' en memoria,
-		copia los datos de derecha a izquierda para evitar superposición.
-	{
-		while (n--)
-			*(d + n) = *(s + n);
-		return(dest);
-	}
-	// Si 'src' no está antes de 'dest' en memoria,
-		copia los datos de izquierda a derecha como en memcpy.
-	while (n--)
-		*d++ = *s++;
-	return (dest);
- }
-
-int	main(void)
-{
-	char	str[] = "abcdefghijklmnopqrstuvwxyz";
-	char	dest[28];
-
-	// Usamos la función ft_memmove para copiar 5 caracteres desde str a buffer.
-	ft_memmove(dest, str, 15);
-	// Imprimimos el resultado.
-	printf("%s\n", dest);
 	return (0);
 }
 */

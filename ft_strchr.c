@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:02:19 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:13:06 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/15 14:08:13 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,22 @@
 
 char	*ft_strchr(const char *str, int character)
 {
-	while (*str)
+	char	*d;
+	int	i;
+	
+	if (!str)
+		return (0);
+	d = (char *) str;
+	i = 0;
+	while (d[i])
 	{
-		if (*str == character)
-			return ((char *)str);
-		++str;
+		if (d[i] == (unsigned char) character)
+			return (d + i);
+		i++;	
 	}
-	return (NULL);
+	if (character == '\0')
+		return (d + i);
+	return (0);		
 }
 
 /*
