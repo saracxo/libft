@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 16:25:28 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/16 12:00:44 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/16 16:43:02 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	while (i < n && (str1[i] && str2[i]))
 	{
 		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 		i++;
 	}
-	return (str1[i] - str2[i]);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
 /*
 #include <stdio.h>
