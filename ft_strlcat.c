@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 16:10:51 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 15:36:51 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:44:00 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,30 @@
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	length;
+	size_t	dest_len;
+	size_t	src_len;
 
+	dest_len = ft_strlen(dest);
+	src_len = ft_strlen(src);
+
+	if (size <= dest_len)
+		return (src_len + size);
 	i = 0;
-	while (dest[i] && i < size)
-		i++;
-	length = i;
-	while (src[i - length] && i < size - 1)
+	while (src[i] && i < size - dest_len - 1)
 	{
-		dest[i] = src[i - length];
+		dest[dest_len + i] = src[i];
 		i++;
 	}
-	if (length < size)
-		dest[i] = '\0';
-	return (length + ft_strlen(src));
+	dest[dest_len + i] = '\0';
+	return (dest_len + src_len);
 }
+
 /*
 int	main(void)
 {
 	char dest[10] = "Hola,";
 	const char src[] = "poota";
-	size_t size = 20;
+	size_t size = 4;
 
 	size_t result = ft_strlcat(dest, src, size);
 
