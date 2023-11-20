@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 11:02:19 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/16 10:50:02 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/20 12:20:21 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 char	*ft_strchr(const char *str, int character)
 {
-	char	*d;
 	int		i;
+	char	*p;
+	char	c;
 
-	if (!str)
-		return (0);
-	d = (char *)str;
 	i = 0;
-	while (d[i])
+	p = (char *)str;
+	c = character;
+	while (p[i])
 	{
-		if (d[i] == (unsigned char)character)
-			return (d + i);
+		if (p[i] == c)
+			return (&p[i]);
 		i++;
 	}
-	if (character == '\0')
-		return (d + i);
-	return (0);
+	if (c == '\0')
+		return (&p[i]);
+	return (NULL);
 }
 
 /*
