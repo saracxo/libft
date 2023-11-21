@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 11:34:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/16 10:49:02 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/21 16:47:24 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, unsigned long len);
 int		ft_tolower(int i);
 int		ft_toupper(int i);
 

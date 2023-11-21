@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:18:54 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 10:45:18 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/21 17:31:21 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_seplen(char const *str, char sep, int i)
+static int	ft_seplen(char const *str, char sep, int i)
 {
 	int	len;
 
@@ -25,7 +25,7 @@ int	ft_seplen(char const *str, char sep, int i)
 	return (len);
 }
 
-int	count_words(char const *str, char sep)
+static int	count_words(char const *str, char sep)
 {
 	int	counter;
 	int	i;
