@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 10:58:15 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 10:59:48 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:32:46 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,3 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, unsigned long num)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char			str1[];
-	char			str2[];
-	unsigned long	n;
-
-	str1[] = "hola";
-	str2[] = "holb";
-	n = 4;
-	ft_memcmp(str1, str2, n);
-	printf("%d\n", ft_memcmp(str1, str2, n));
-	return (0);
-}
-*/

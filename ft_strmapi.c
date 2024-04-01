@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:57:29 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 12:17:26 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:56:39 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-char	callback(unsigned int index)
-{
-	if (index % 2 == 0)
-		return ('j');
-	else
-		return ('a');
-}
-
-/*
-int	main(void)
-{
-	printf("%s\n", ft_strmapi("holadfiuahsdf", callback));
-	return (0);
-}
-*/

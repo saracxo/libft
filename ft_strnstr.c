@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 12:26:27 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/20 12:11:56 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:42:27 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,22 +32,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*int main()
-{
-	char *haystack = "hola caracola";
-	char *needle = "cara";
-	size_t len = 10;
-
-	char *result = ft_strnstr(haystack, needle, len);
-	if (result)
-	{
-		printf("Se ha encontrado: %s\n en la frase: %s\n en la posición: %s\n",
-			needle, haystack, result);
-	}
-	else
-	{
-		printf("No se ha encontrado: %s %s\n", needle, haystack);
-	}
-	return (0);
-} */

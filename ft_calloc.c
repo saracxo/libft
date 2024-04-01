@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:37:05 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/17 10:59:22 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:28:46 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(mem, count * size);
 	return (mem);
 }
-/*int main(void)
-{
-	printf("%s\n", ft_calloc(6, 2));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 10:50:34 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/15 11:17:46 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:32:11 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,23 +53,3 @@ char	*ft_itoa(int n)
 	}
 	return (string);
 }
-
-/*
-int	main(void)
-{
-	int num;
-	char *string;
-
-	num = 0;
-	string = ft_itoa(num);
-	if (string != NULL)
-	{
-		printf("Cadena: %s\n", string);
-	}
-	else
-	{
-		printf("Error \n");
-	}
-	return (0);
-}
-*/

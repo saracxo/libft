@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:23:53 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:59:35 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:32:56 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[8] = "tonto";
-	char	dest[8];
-
-	ft_memcpy(dest, src, 8);
-	printf("%s\n", dest);
-	return (0);
-}
-*/

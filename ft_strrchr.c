@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 11:07:20 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 15:37:30 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:42:11 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int	main(vo7id)
-{
-	printf("%s \n", ft_strrchr("holi caracoli", 'r'));
-	return (0);
-}
-*/

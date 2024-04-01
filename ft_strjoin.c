@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:01:55 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/20 12:26:33 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:50:53 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(join, s2, size + 1);
 	return (join);
 }
-
-/*
-int	main(void)
-{
-	char	*result;
-
-	char s1[] = "hola";
-	char s2[] = "pelo";
-	result = ft_strjoin(s1, s2);
-	printf("s1:%s\n s2:%s\n result:%s\n", s1, s2, result);
-	return (0);
-}
-*/

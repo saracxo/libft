@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 14:26:21 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/21 17:33:36 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:30:50 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_toupper(int i)
 		i -= 32;
 	return (i);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%c", ft_toupper('h'));
-	return (0);
-}
-*/

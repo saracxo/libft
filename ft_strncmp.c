@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 16:25:28 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/20 12:05:14 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:56:26 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (c1 - c2);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int	result;
-
-	char	s1[] = "culo g";
-	char	s2[] = "culo c";
-	result = ft_strncmp(s1, s2, 6);
-	printf("s1: %s, s2: %s, diferencia: %d\n", s1, s2, result);
-	return (0);
-}
-*/

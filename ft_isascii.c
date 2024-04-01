@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:01:40 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 12:37:42 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:29:05 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isascii(int i)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d", ft_isascii(210));
-	return (0);
-}
-*/

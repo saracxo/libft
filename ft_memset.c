@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 12:59:18 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 11:26:04 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:34:43 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,3 @@ void	*ft_memset(void *b, int c, unsigned int len)
 	}
 	return (b);
 }
-
-//#include <stdio.h>
-
-// int	main(void)
-// {
-// 	size_t	n;
-
-// 	char str[] = "Hola Sara";
-// 	n = 1;
-// 	ft_memset(str, n, 0);
-// 	printf("%s\n", str);
-// 	return (0);
-// }

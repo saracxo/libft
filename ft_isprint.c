@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:50:07 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/11 15:40:25 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:29:36 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isprint(int i)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d", ft_isascii(12));
-	return (0);
-}
-*/

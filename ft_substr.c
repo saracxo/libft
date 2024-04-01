@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:46:58 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/21 17:29:16 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:39:24 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-// int	main(void)
-// {
-// 	char	*h;
-
-// 	h = "Hola";
-// 	printf("\n%s\n", ft_substr(h, 3, 2));
-// }

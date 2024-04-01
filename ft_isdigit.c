@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 15:19:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 16:34:19 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:29:33 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isdigit(int i)
 		return (1);
 	return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isidigit('2'));
-	return (0);
-}
-*/

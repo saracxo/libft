@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 15:09:05 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/10/13 14:57:14 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:28:10 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	s = 1;
 	num = 0;
-	while (str[i] != '\0' && (str[i] == ' '
-			|| str[i] == '\t' || str[i] == '\n'
+	while (str[i] != '\0' && (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
 			|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f'))
 		i++;
 	if (str[i] == '-')
@@ -37,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (num * s);
 }
-
-/*int	main(void)
-{
-	char str1[] = "1234ab567";
-
-	ft_atoi(str1);
-	printf("%d\n", ft_atoi(str1));
-	return (0);
-} */

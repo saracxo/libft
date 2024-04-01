@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarcasti <sarcasti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:04:34 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/14 12:14:35 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:56:17 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_first(char const *s1, char const *set)
+static int	ft_first(char const *s1, char const *set)
 {
 	int	j;
 	int	i;
@@ -35,17 +35,8 @@ int	ft_first(char const *s1, char const *set)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
 
-int	main(void)
-{
-	printf("Resultado: %d\n", ft_pene("cbaHolacb", "abc") - 1);
-	return (0);
-}
-*/
-
-int	ft_last(char const *s1, char const *set)
+static int	ft_last(char const *s1, char const *set)
 {
 	int	j;
 	int	i;
@@ -68,18 +59,6 @@ int	ft_last(char const *s1, char const *set)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char	*s1;
-	char	*set;
-
-	s1 = "cbaHolacb";
-	set = "abc";
-	printf("Resultado: %d\n", ft_last(s1, set));
-	return (0);
-}
-*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -94,17 +73,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	punt = ft_substr(s1, start, last - start + 1);
 	return (punt);
 }
-/*
-int	main(void)
-{
-	char	*s1;
-	char	*set;
-	char	*result;
-
-	s1 = "cbaHolacb";
-	set = "abc";
-	result = ft_strtrim(s1, set);
-	printf("%s", result);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:18:54 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/21 17:31:21 by sarcasti         ###   ########.fr       */
+/*   Updated: 2023/12/01 12:38:50 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,12 @@ static int	count_words(char const *str, char sep)
 	return (counter);
 }
 
-char	*fill_arr(char const *str, int j, int len)
+static char	*fill_arr(char const *str, int j, int len)
 {
 	char	*out;
 	int		i;
 
-	out = (char *) malloc((len + 1) * sizeof(char));
+	out = (char *)malloc((len + 1) * sizeof(char));
 	if (!out)
 		return (0);
 	i = 0;
@@ -64,7 +64,7 @@ char	*fill_arr(char const *str, int j, int len)
 	return (out);
 }
 
-void	free_arr(char *arr[])
+static void	free_arr(char *arr[])
 {
 	int	i;
 
@@ -85,7 +85,7 @@ char	**ft_split(char const *s, char c)
 	int		j;
 
 	arr_len = count_words(s, c);
-	arr = (char **) malloc((arr_len + 1) * sizeof(char *));
+	arr = (char **)malloc((arr_len + 1) * sizeof(char *));
 	if (!arr)
 		return (0);
 	i = 0;
@@ -103,14 +103,3 @@ char	**ft_split(char const *s, char c)
 	arr[i] = 0;
 	return (arr);
 }
-//
-// int	main(int argc, char **argv)
-// {
-// 	char	**out = ft_split(argv[1], argv[2][0]);
-// 	int	i = 0;
-// 	while (out[i])
-// 	{
-// 		printf("%s\n", out[i]);
-// 		i++;
-// 	}
-// }
