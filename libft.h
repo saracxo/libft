@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 11:34:44 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/21 16:47:24 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/03 12:41:05 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

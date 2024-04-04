@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:37:05 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/30 12:28:46 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/03 14:49:19 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
 
+	if(count && SIZE_MAX / count < size)
+		return (NULL);
 	mem = malloc(count * size);
 	if (!mem)
 		return (NULL);

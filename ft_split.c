@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:18:54 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/12/01 12:38:50 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/03 15:17:18 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ char	**ft_split(char const *s, char c)
 	int		j;
 
 	arr_len = count_words(s, c);
-	arr = (char **)malloc((arr_len + 1) * sizeof(char *));
+	arr = (char **)ft_calloc((arr_len + 1), sizeof(char *));
 	if (!arr)
 		return (0);
 	i = 0;
@@ -100,6 +100,5 @@ char	**ft_split(char const *s, char c)
 		j += ft_seplen(s, c, j);
 		i++;
 	}
-	arr[i] = 0;
 	return (arr);
 }

@@ -6,11 +6,11 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 14:52:11 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/30 12:30:47 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/03 11:39:59 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_tolower(int i)
 {

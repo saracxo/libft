@@ -6,11 +6,11 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 10:17:30 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/30 12:48:19 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/03 11:38:54 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
