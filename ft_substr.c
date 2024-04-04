@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:46:58 by sarcasti          #+#    #+#             */
-/*   Updated: 2024/04/03 11:59:00 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/04 13:58:21 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+/*int main()
+{
+	char *s = "estuche";
+	int start = 2;
+	size_t len = 7;
+	
+	char *result = ft_substr(s, start, len);
+	printf("%s", result);
+	return 0;	
+}*/

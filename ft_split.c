@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:18:54 by sarcasti          #+#    #+#             */
-/*   Updated: 2024/04/03 15:17:18 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/04 13:58:41 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,3 +102,18 @@ char	**ft_split(char const *s, char c)
 	}
 	return (arr);
 }
+
+/*int main()
+{
+	char *str = "hola barbara";
+	char c = " ";
+	char **result = ft_split(str, c);
+	int i = 0;
+	while (result[i] !='\0')
+	{
+		printf("%s\n", result[i]);
+		i++;
+	}
+	
+	return 0;	
+}*/
