@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 10:18:54 by sarcasti          #+#    #+#             */
-/*   Updated: 2024/04/04 13:58:41 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/05 10:44:15 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ char	**ft_split(char const *s, char c)
 /*int main()
 {
 	char *str = "hola barbara";
-	char c = " ";
+	char c = 'b';
 	char **result = ft_split(str, c);
 	int i = 0;
 	while (result[i] !='\0')

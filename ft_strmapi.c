@@ -6,7 +6,7 @@
 /*   By: sarcasti <sarcasti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 16:57:29 by sarcasti          #+#    #+#             */
-/*   Updated: 2023/11/30 12:56:39 by sarcasti         ###   ########.fr       */
+/*   Updated: 2024/04/05 11:18:10 by sarcasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
+
+/*char my_func(unsigned int i, char c)
+{
+    return ft_tolower(c);
+}
+
+int main()
+{
+    char const *s = "Hola, mundo!";
+    char *result = ft_strmapi(s, my_func);
+    if (result != NULL)
+    {
+        printf("%s\n", result);
+        free(result);
+    }
+    return 0;
+}*/ 
